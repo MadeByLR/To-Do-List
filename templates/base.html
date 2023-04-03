@@ -18,5 +18,8 @@
         </div>    
     </form>
 
+    {% for todo in todo_list %}
+        <p> {{ todo.id }} | {{ todo.title }} </p>
+    {% endfor %}
 </body>
 </html>
